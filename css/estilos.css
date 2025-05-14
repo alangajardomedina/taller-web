@@ -1,0 +1,360 @@
+/* -------------------------
+   ESTILOS GENERALES
+------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* -------------------------
+   HEADER Y NAVEGACIÓN (Actualizado)
+------------------------- */
+header {
+  background-color: #1e1e2f;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #343450;
+  color: #f0f0f0;
+}
+
+/* -------------------------
+   TARJETAS DE PRODUCTO
+------------------------- */
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  width: 250px;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#destacados,
+#catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* -------------------------
+   BUSCADOR
+------------------------- */
+#buscador {
+  display: block;
+  width: 80%;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* -------------------------
+   DETALLE PRODUCTO
+------------------------- */
+#detalle-producto {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#detalle-producto img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#detalle-producto button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#detalle-producto button:hover {
+  background-color: #0056b3;
+}
+
+/* -------------------------
+   CARRITO
+------------------------- */
+#carrito {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#carrito table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#carrito th, #carrito td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+#carrito button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#carrito button:hover {
+  background-color: #218838;
+}
+
+/* -------------------------
+   FORMULARIO DE CONTACTO
+------------------------- */
+#contacto {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+#contacto h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contacto label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contacto button {
+  padding: 12px;
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contacto button:hover {
+  background-color: #343450;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+footer {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  border-bottom: 2px solid #ffffff30;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociales li {
+  margin: 5px 0;
+}
+
+.redes-sociales a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #ffce00;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ffffff20;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+/* Responsive para formulario */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 15px;
+    margin: 20px;
+  }
+}
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+@media (max-width: 768px) {
+  .contenedor-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  #destacados,
+  #catalogo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  #buscador {
+    width: 95%;
+  }
+
+  #detalle-producto img {
+    max-width: 90%;
+  }
+
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
